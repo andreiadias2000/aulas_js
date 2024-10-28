@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        interaja...
+
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            a.innerText = 'CLICOU!'
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'entrou'
+        }
+
+        function sair(){
+            a.innerText = 'saiu!'
+            a.style.background = 'green'
+
+        }
+        // onclick => disparado quando recebe um click
+        // ondblclick => disparado quando click duplo
+        // onmouseover => disparado quando o mouse está sobre
+        // onmouseout => disparado quando o mouse sai do objeto
+        // onmousemove => disparado quando o mouse é movido no elemento
+        // onmousedown => disparado quando o click do botão for pressionado
+        // onmouseup = > disparado quando o click do mouse é solto
+        // onfocus => disparado quando o elemento recebe o foco. Válido para input
+        // onchange => disparado quando há uma mudança no conteúdo. "Ao mudar"
+        // onblur => disparado quando o elemento perde o foco
+        // onkeydown => disparado quando uma tecla é pressionada
+        // onkeypress => disparado quando uma tecla é pressionada e solta
+        // onkeyup => disparado quando uma tecla é solta sobre o elemento
+        // onload => disparado quando a página terminou de ser carregada. Body
+        // onresize => disparado quando há um redimencionamento da janela
+    </script>
+</body>
+
+</html>
+
